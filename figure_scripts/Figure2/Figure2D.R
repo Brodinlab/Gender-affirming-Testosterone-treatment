@@ -6,9 +6,9 @@ library(ggplot2)
 library(paletteer)
 library(scales)
 
-setwd("enter source data folder")
+setwd("Please insert working directory here to point at directory '../data/'")
 
-d <- read.delim("data/rna_blood_cell.tsv", header=T, sep="\t")
+d <- read.delim("rna_blood_cell.tsv", header=T, sep="\t")
 d <- d[d$Blood.cell != "total PBMC", ]
 
 #subset the data on hormone receptors only

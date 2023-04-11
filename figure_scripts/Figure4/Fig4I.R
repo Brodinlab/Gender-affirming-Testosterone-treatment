@@ -30,16 +30,17 @@ annotations <- GetGRangesFromEnsDb(ensdb = EnsDb.Hsapiens.v86)
 seqlevelsStyle(annotations) <- 'UCSC'
 
 # Load data from cellranger aggr output
-setwd("./1_aggr_out/")
-counts <- Read10X_h5(filename = "filtered_peak_bc_matrix.h5")
-metadata <- read.csv(file = "singlecell.csv", header = T, row.names = 1)
+setwd("Please insert working directory here to point at directory '../data/Figure4/'")
+
+counts <- Read10X_h5(filename = "4i/1_aggr_out/filtered_peak_bc_matrix.h5")
+metadata <- read.csv(file = "4i/1_aggr_out/singlecell.csv", header = T, row.names = 1)
 metadata$sampleID <- sapply(str_split(rownames(metadata), "-"), "[", 2)
 # fragment file: full list of unique fragments across all single cells, and the fragment index file (fragments.tsv.gz.tbi) needs to be in the same folder for this to work
 chrom_assay <- CreateChromatinAssay(
   counts = counts,
   sep = c(":", "-"),
   genome = 'hg38', 
-  fragments = "fragments.tsv.gz",
+  fragments = "4i/1_aggr_out/fragments.tsv.gz",
   min.cells = 10,
   min.features = 200)
 

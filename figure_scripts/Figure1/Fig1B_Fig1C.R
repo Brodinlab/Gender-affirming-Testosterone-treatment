@@ -4,7 +4,7 @@
 library(ggplot2)
 library(dplyr)
 
-
+setwd("Please insert working directory here to point at directory '../data/Figure1/'")
 # meta
 meta <- read.csv("Fig1_metadata.csv", row.names = 1)
 

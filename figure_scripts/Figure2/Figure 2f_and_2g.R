@@ -7,10 +7,10 @@ library(ggridges)
 library(tibble)
 library(wesanderson)
 
-setwd("Set working directory")
+setwd("Please insert working directory here to point at directory '../data/Figure2/'")
 
 sub_name <- 'pDC'
-file_path = './data/anndata_folder_PAGA_CyTOF/pDC_sample5000.h5ad'
+file_path = 'pDC_sample5000.h5ad'
 
 datah5 = readH5AD(file = file_path)
 data = t(assay(datah5)) %>% as_tibble()

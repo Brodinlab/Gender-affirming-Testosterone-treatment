@@ -1,11 +1,10 @@
 # script for plotting SIMOA IFNa levels following stimulation
 # Author: Petter Brodin (petter.brodin@ki.se)
 
-setwd("Insert working directory here")
 library(tidyverse)
-
+setwd("Please insert working directory here to point at directory '../data/Figure2/'")
 # stimulated PBMCs in vitro and IFN-I analyzed
-d.stim <-read.delim("./data/SIMOA/Simoa_stimulated_cultures_gender_affirming_project_V2.csv", sep=",", header=T)
+d.stim <-read.delim("Simoa_stimulated_cultures_gender_affirming_project_V2.csv", sep=",", header=T)
 
 # run paired t-test Visit 1/2:
 r848stim <- d.stim[d.stim$Group=="R848", ]

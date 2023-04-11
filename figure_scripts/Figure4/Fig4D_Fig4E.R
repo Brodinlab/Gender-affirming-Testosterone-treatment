@@ -11,14 +11,12 @@ library(qusage)
 options(ggrepel.max.overlaps = Inf)
 
 # scRNAseq 10X, first run/Camila
-
+setwd("Please insert working directory here to point at directory '../data/Figure4/'")
 # load data
 # GE
-data_dir <- "~/2203_STO11/GE/"
-ge.data <- Read10X(data.dir = data_dir)
+ge.data <- Read10X('4D_4E/2203_STO11/GE/')
 # HTO
-data_dirHTO <- "~/2203_STO11/HTO/raw/"
-hto.data <- Read10X(data.dir = data_dirHTO)
+hto.data <- Read10X('4D_4E/2203_STO11/HTO/raw/')
 
 # Select cell barcodes detected by both RNA and HTO In the example datasets we have already
 # filtered the cells for you, but perform this step for clarity.

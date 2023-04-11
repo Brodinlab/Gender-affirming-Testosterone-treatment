@@ -19,6 +19,7 @@ library(msigdbr)
 library(ggraph)
 library(plyr)
 
+setwd("Please insert working directory here to point at directory '../data/Figure1/'")
 ## DESeq2 ##
 
 # load run info

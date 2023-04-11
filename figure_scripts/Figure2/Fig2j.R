@@ -2,10 +2,9 @@
 # Author: Petter Brodin (petter.brodin@ki.se)
 library(tidyverse)
 
-setwd("Insert working directory here")
-
+setwd("Please insert working directory here to point at directory '../data/Figure2/'")
 # ex vivo plasma sample SIMOA analysis
-d.in.vivo <-read.delim("./data/SIMOA/Simoa_plasma_gender_affirming_project.csv", sep=",", header=T)[, -c(7:10)]
+d.in.vivo <-read.delim("Simoa_plasma_gender_affirming_project.csv", sep=",", header=T)[, -c(7:10)]
 
 #panIFNa levels
 p <- ggplot(d.in.vivo, aes(x=Visit, y=log(panIFNa))) + 

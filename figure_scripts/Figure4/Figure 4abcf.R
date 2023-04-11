@@ -4,12 +4,13 @@ library(ggplot2)
 library(ggpubr)
 library(rstatix)
 
-setwd("Set working directory here")
-info <- read_csv('./data/frequency table/info.csv')
+setwd("Please insert working directory here to point at directory '../data/Figure4/'")
+
+info <- read_csv('frequency table/info.csv')
 
 # 4a
 
-data_freq <- read_csv('./data/frequency table/CyTOF flowSOM level1.csv')
+data_freq <- read_csv('frequency table/CyTOF flowSOM level1.csv')
 
 d <- data_freq %>% 
   select(-n) %>% 
@@ -31,7 +32,7 @@ ggplot(d %>% filter(flowSOM_level1 == 'CD4CD8_ratio'), aes(x=timepoint, y=freq, 
   scale_x_continuous(breaks=c(0,3, 6, 9, 12))
 
 # 4bcg
-data_freq <- read_csv('./data/frequency table/CyTOF flowSOM level2.csv')
+data_freq <- read_csv('frequency table/CyTOF flowSOM level2.csv')
 
 d <- data_freq %>% filter(flowSOM_level1 == 'CD4Tcells') %>%
   mutate(custom_subpop = case_when(
