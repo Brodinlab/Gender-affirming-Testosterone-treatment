@@ -5,7 +5,7 @@ For all the data in the article, please visit this link and download the zip-fil
 
 To download all the reproducible code, please clone this repository using *git clone git@github.com:Brodinlab/Gender-affirming-Testosterone-treatment.git*.
 
-For jupyter scripts: For the file-pathways to work directly, you have to open Jupyter Lab/Notebook in the specific figure-folder (eg figure-scripts/Figure2), otherwise you have to specify your own data directory.
+For jupyter scripts: For the file-pathways to work directly, you have to open Jupyter Lab/Notebook in the specific figure-folder (eg figure-scripts/Figure2) and put the data-directory at the top of the folder (so the path is Gender-affirming-Testosterone-treatment/data), otherwise you can specify your own data directory.
 
 For the R-scripts, please specify your working directory where the data-folder is located before loading in the data file.
 
