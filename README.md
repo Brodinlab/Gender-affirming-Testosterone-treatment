@@ -9,6 +9,8 @@ For jupyter scripts: For the file-pathways to work directly, you have to open Ju
 
 For the R-scripts, please specify your working directory where the data-folder is located before loading in the data file.
 
+Please note that for some of the figures to be correctly reproduced, first run the jupyter script ending in \\_ preparation and then the R-file.
+
 For any questions regarding data analyses, please contact *petter.brodin@ki.se*
 
 
