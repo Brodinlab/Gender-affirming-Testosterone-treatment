@@ -20,6 +20,7 @@ library(ggraph)
 library(plyr)
 
 # Design including all cells for EXT FIG 1A
+setwd("Please insert working directory here to point at directory '../data/Figure2/' - also please note that you first need to run Fig2A_CyTOF_1_flowSOM.R to generate files needed in this script")
 
 # Download all data from Gender-affirming-Testosterone-treatment/data/Figure1
 # load run info

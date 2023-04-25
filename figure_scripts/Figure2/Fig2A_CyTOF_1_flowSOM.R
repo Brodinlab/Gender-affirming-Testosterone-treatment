@@ -331,8 +331,7 @@ rownames(sampleinfo) <- NULL
 write.csv(sampleinfo, "221003_sampleinfo.csv")
 
 ### Select df with GATT only for further analysis ###
-setwd("/Users/camilaconsiglio/Documents/BrodinLab/SRT/Data/Metadata/")
-meta <- read.csv("220829_Metadata.csv",row.names = 1)
+meta <- read.csv("220829_Metadata_FtM.csv",row.names = 1)
 FtM <- meta$Subject[meta$Transition %in% "FtM"]
 
 combat_edata_B_label$Subject <- paste(combat_edata_B_label$SubjectID, combat_edata_B_label$Visit, sep = "_")
