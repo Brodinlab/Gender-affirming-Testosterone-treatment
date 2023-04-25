@@ -15,6 +15,8 @@ library(ggthemes)
 library(RColorBrewer)
 library(paletteer)
 
+setwd("Please insert working directory here to point at directory '../data/Figure2/'")
+
 # Load mixed effects results
 res_df = read.csv('221003_CyTOF_flowSOMlevel2_MEM_FtM_visit_age.csv')
 colnames(res_df)[2] <- "flowSOM_level2"
