@@ -7,10 +7,6 @@ To download all the reproducible code, please clone this repository using *git c
 
 For jupyter scripts: For the file-pathways to work directly, you have to open Jupyter Lab/Notebook in the specific figure-folder (eg figure-scripts/Figure2) and put the data-directory at the top of the folder (so the path is Gender-affirming-Testosterone-treatment/data), otherwise you can specify your own data directory.
 
-For the R-scripts, please specify your working directory where the data-folder is located before loading in the data file. NOTE for Figure2A-C, please unzip the files first.
-
-Please note that for some of the figures to be correctly reproduced, first run the jupyter script ending in *\_preparation.ipynb* and then the R-script.
-
 For any questions regarding data analyses, please contact *petter.brodin@ki.se*
 
 
