@@ -1,6 +1,6 @@
 # Created by Camila Consiglio (camila.consiglio@med.lu.se)
 
-## FIGURE 3A ##
+## FIGURE 3D ##
 library(OlinkAnalyze)
 library(stringr)
 library(reshape2)
