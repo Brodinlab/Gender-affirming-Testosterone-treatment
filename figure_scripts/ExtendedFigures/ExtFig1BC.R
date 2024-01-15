@@ -1,6 +1,6 @@
 # Created by Camila Consiglio (camila.consiglio@med.lu.se)
 
-## EXT FIG 1A &  EXT FIG 1B ##
+## EXT FIG 1B &  EXT FIG 1C ##
 library(tidyverse)
 library(stringr)
 library(GenomicFeatures)
@@ -19,7 +19,7 @@ library(msigdbr)
 library(ggraph)
 library(plyr)
 
-# Design including all cells for EXT FIG 1A
+# Design including all cells for EXT FIG 1B
 setwd("Please insert working directory here to point at directory '../data/Figure2/' - also please note that you first need to run Fig2A_CyTOF_1_flowSOM.R to generate files needed in this script")
 
 # Download all data from Gender-affirming-Testosterone-treatment/data/Figure1
@@ -187,7 +187,7 @@ ids_interest <- c("HALLMARK_INFLAMMATORY_RESPONSE",
                   "HALLMARK_GLYCOLYSIS",
                   "HALLMARK_CHOLESTEROL_HOMEOSTASIS")
 
-# EXT FIG 1B
+# EXT FIG 1C
 P1 <- res_gsea_all %>%
   filter(ID %in% ids_interest) %>%
   mutate(stars=cut(p.adjust, breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), label=c("***", "**", "*", " "))) %>%
@@ -201,7 +201,7 @@ P1 <- res_gsea_all %>%
 P1
 
 
-## Design including all cells execpt pDC for EXT FIG 1B ##
+## Design including all cells execpt pDC for EXT FIG 1C ##
 dds <- DESeqDataSetFromTximport(txi, colData = meta, design = ~ SubjectID.x + Age + Bcells + CD4Tcells + CD8Tcells + DC + Eosinophils + Monocytes + Neutrophils + NKcells + Visitb) #
 
 # filtering steps
@@ -308,7 +308,7 @@ res_gsea_all <- rbind(
   resNeutrophils_gsea, resNKcells_gsea
 )
 
-# EXT FIG 1A
+# EXT FIG 1B
 P2 <- res_gsea_all %>%
   filter(ID %in% ids_interest) %>%
   mutate(stars=cut(p.adjust, breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), label=c("***", "**", "*", " "))) %>%

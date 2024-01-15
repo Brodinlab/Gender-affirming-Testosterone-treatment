@@ -1,6 +1,6 @@
 # Created by Camila Consiglio (camila.consiglio@med.lu.se)
 
-## FIGURE 4I ##
+## FIGURE 4B ##
 install.packages("Seurat", version=4, force=TRUE)
 library(Signac)
 library(Seurat)
