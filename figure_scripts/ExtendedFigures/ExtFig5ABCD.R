@@ -4,11 +4,11 @@ library(ggplot2)
 library(ggpubr)
 library(rstatix)
 
-setwd("Please insert working directory here to point at directory '../data/Figure4/'")
+setwd("Please insert working directory here to point at directory '../data//'")
 
 info <- read_csv('frequency table/info.csv')
 
-# 4a
+# 5ABCD
 
 data_freq <- read_csv('frequency table/CyTOF flowSOM level1.csv')
 
@@ -31,7 +31,7 @@ ggplot(d %>% filter(flowSOM_level1 == 'CD4CD8_ratio'), aes(x=timepoint, y=freq, 
   theme_bw() +
   scale_x_continuous(breaks=c(0,3, 6, 9, 12))
 
-# 4bcg
+
 data_freq <- read_csv('frequency table/CyTOF flowSOM level2.csv')
 
 d <- data_freq %>% filter(flowSOM_level1 == 'CD4Tcells') %>%
@@ -55,21 +55,21 @@ tb <- d %>% mutate(timepoint_group = case_when(
 )) %>% 
   group_by(custom_subpop) %>% pairwise_t_test(freq ~ timepoint_group, paired = T)
 
-# 4b
+
 ggplot(d %>% filter(custom_subpop == 'Naive CD4'), aes(x=timepoint, y=freq, group=SubjectID)) +
   geom_point() + geom_path() + 
   theme_bw() +
   scale_x_continuous(breaks=c(0,3, 6, 9, 12)) +
   ggtitle('Naive CD4')
 
-# 4f
+
 ggplot(d %>% filter(custom_subpop == 'Treg'), aes(x=timepoint, y=freq, group=SubjectID)) +
   geom_point() + geom_path() + 
   theme_bw() +
   scale_x_continuous(breaks=c(0,3, 6, 9, 12)) +
   ggtitle('Treg')
 
-# 4c
+
 d <- data_freq %>% filter(flowSOM_level1 == 'CD8Tcells') %>%
   mutate(custom_subpop = case_when(
     flowSOM_level2 %in% c('CD8Tcells_Naive', 'CD8Tcells_Naive_CD24') ~ 'Naive CD8',

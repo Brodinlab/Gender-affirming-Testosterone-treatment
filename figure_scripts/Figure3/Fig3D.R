@@ -16,7 +16,7 @@ library(dplyr)
 setwd("Please insert working directory here to point at directory '/data/Figure3/'")
 
 # Load df
-olinkX <- read.csv("220718_olink_fourbatches_FtM.csv", row.names = 1)
+olinkX <- read.csv("220718_olink_fourbatches_FtM_renamed.csv", row.names = 1)
 meta <- read.csv("Fig1_metadata.csv", row.names = 1) 
 m_olink <- merge(meta, olinkX, by.x="Subject", by.y="row.names") 
 colnames(m_olink)
