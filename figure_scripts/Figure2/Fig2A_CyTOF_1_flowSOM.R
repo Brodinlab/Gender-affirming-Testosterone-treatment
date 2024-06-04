@@ -22,7 +22,7 @@ options(ggrepel.max.overlaps = Inf)
 # EXP22DG3665
 
 # Load flowframe
-setwd("Please insert working directory here to point at directory '../data/Figure2/'")
+setwd("Please insert working directory here to point at directory './data/Figure2/'")
 
 ff = read.FCS('220811_CyTOF_1234batches_ComBat_corrected.fcs', transformation = FALSE, truncate_max_range = FALSE)
 combat_edata_B_label <- read.csv("220811_CyTOF_1234batches_ComBat_corrected_labels.csv", row.names = 1)

@@ -13,6 +13,7 @@ library(lme4)
 library(ggthemes)
 
 # Load df
+setwd("./data/ExtFig4/")
 olinkX <- read.csv("220718_olink_fourbatches_FtM_renamed.csv", row.names = 1)
 meta <- read.csv("Fig1_metadata.csv", row.names = 1) 
 m_olink <- merge(meta, olinkX, by.x="Subject", by.y="row.names") 

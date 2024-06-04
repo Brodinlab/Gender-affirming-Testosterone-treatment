@@ -39,8 +39,8 @@ weighted_networks = readRDS(url("https://zenodo.org/record/3260758/files/weighte
 weighted_networks_lr = weighted_networks$lr_sig %>% inner_join(lr_network %>% distinct(from,to), by = c("from","to"))
 
 #Read in adata made for NicheNet analysis (found in jupyter script for Figure4_scRNA-seq, "preparing for NicheNet")
-count_data_str <- 'insert pathway generated from jupyter script'
-meta_data_str <- 'insert pathway generated from jupyter script'
+count_data_str <- 'insert pathway generated from jupyter script "Figure4Aprep_4F.ipynb" '
+meta_data_str <- 'insert pathway generated from jupyter script "Figure4Aprep_4F.ipynb" '
 
 expression_data <- read.csv(count_data_str, row.names = 1)
 expression_data <- t(expression_data)

@@ -9,6 +9,7 @@ library(cowplot)
 
 
 # meta
+setwd('./data/ExtFig1/')
 meta <- read.csv("Fig1_metadata2024.csv", row.names = 1)
 
 # KW pvalues

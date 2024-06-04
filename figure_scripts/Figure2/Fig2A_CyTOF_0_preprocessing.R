@@ -20,7 +20,7 @@ library(ggrastr)
 # EXP21DG3628
 # EXP22DG3665
 
-setwd("Please insert working directory here to point at directory '../data/Figure2/'")
+setwd("Please insert working directory here to point at directory './data/Figure2/'")
 
 #download CyTOF data from https://flowrepository.org/id/RvFrXOT8W7LbhnWqDpab7sf10EIFURBQBJp1AtW99dFK7jjAObTKsHvWl3DjLMwN
 # info on which samples are on which batch is found in the metadata file

@@ -14,7 +14,7 @@ library(cowplot)
 library(ggthemes)
 
 # Load data
-setwd("./ExtFig4")
+setwd("./data/ExtFig4")
 Jul22 <- read_NPX(filename = "SexChange_NPX_LOD.xlsx")
 Jul22.meta <- read.csv("20220714_OlinkPlateLayout.csv")
 Jul22.meta <- Jul22.meta %>% filter(Project %in% "FemaleWBstim")

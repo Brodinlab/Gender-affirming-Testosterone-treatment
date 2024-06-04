@@ -19,14 +19,15 @@ library(msigdbr)
 library(ggraph)
 library(plyr)
 
-setwd("Please insert working directory here to point at directory '../data/Figure1/'")
+setwd("Please insert working directory here to point at directory './data/Figure1/'")
 ## DESeq2 ##
 
 # load run info
 meta <- read.csv("Fig1_metadata.csv", row.names = 1) 
 
+# NOTE: Please go to folder and uncompress the files in "Figure1/Figure1F-folder".
 # kallisto output files
-dir <- "./"
+dir <- "./Figure1/Figure1F/"
 run <- list.files() 
 files <- file.path(dir, run, "abundance.tsv") 
 #59 files

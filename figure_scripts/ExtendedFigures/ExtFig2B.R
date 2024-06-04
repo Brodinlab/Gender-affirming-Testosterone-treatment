@@ -16,13 +16,13 @@ library(RColorBrewer)
 library(paletteer)
 
 # Load mixed effects results
-setwd("/Users/camilaconsiglio/Documents/BrodinLab/SRT/Data/CyTOF/4_MEM/")
+setwd("./data/ExtFig2/")
 res_df = read.csv('221003_CyTOF_flowSOMlevel2_MEM_FtM_visit_age.csv')
 colnames(res_df)[2] <- "flowSOM_level2"
 res_df$flowSOM_level2[res_df$flowSOM_level2 %in% "Monocytes_NCM"] <- "debris"
 
 # load flowSOM cluster info
-setwd("/Users/camilaconsiglio/Documents/BrodinLab/SRT/Data/CyTOF/3_flowSOM/")
+setwd("./data/ExtFig2/")
 res_bind = read.table('221013_flowsom_clustered_FtM_updatedclusternumbers.txt', header = TRUE, sep = "\t", check.names = FALSE)
 res_bind$flowSOM_level2[res_bind$flowSOM_level2 %in% "Monocytes_NCM"] <- "debris"
 

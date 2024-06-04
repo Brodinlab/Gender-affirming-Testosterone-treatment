@@ -7,7 +7,7 @@ library(ggridges)
 library(tibble)
 library(wesanderson)
 
-setwd("Please insert working directory here to point at directory '../data/Figure2/'")
+setwd("Please insert working directory here to point at directory './data/Figure2/'")
 
 sub_name <- 'pDC'
 file_path = 'pDC_sample5000.h5ad'

@@ -8,6 +8,7 @@ library(factoextra)
 
 
 # meta
+setwd("path_to_data/Figure1")
 meta <- read.csv("Fig1_metadata2024.csv", row.names = 1)
 
 # KW pvalues

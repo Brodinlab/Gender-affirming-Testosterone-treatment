@@ -18,7 +18,7 @@ library(ggthemes)
 # EXP21DG3628
 # EXP22DG3665
 
-setwd("Please insert working directory here to point at directory '../data/Figure2/'")
+setwd("Please insert working directory here to point at directory './data/Figure2/'")
 
 # Load frequency data generated with flowSOM 
 imm.freq <-  read.csv('221003_flowsom_frequency_level2_populations_FtM.csv')
