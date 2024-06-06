@@ -1,10 +1,12 @@
+# Created by Camila Consiglio (camila.consiglio@med.lu.se)
+
 library(dplyr)
 library(readr)
 library(ggplot2)
 library(ggpubr)
 library(rstatix)
 
-setwd("Please insert working directory here to point at directory '../data//'")
+setwd("Please insert working directory here to point at directory './data/ExtFig5/'")
 
 info <- read_csv('frequency table/info.csv')
 
