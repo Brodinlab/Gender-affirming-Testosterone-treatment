@@ -4,13 +4,14 @@
 library(tidyverse)
 
 # Load mixed effects results
+setwd('./data/Figure2')
 res_df = read.csv('221003_CyTOF_flowSOMlevel2_MEM_FtM_visit_age.csv')
 colnames(res_df)[2] <- "flowSOM_level2"
 res_df$flowSOM_level2[res_df$flowSOM_level2 %in% "Monocytes_NCM"] <- "debris"
 
 # Load cell frequencies
-m_imm.freq <- read.csv("CYTOF_cellfrequencies.csv")
-cells_to_plot <- c("pDC", "DC_CD141DC", "MDSC_M", "CD8Tcells_TEMRA_CD24", "Monocytes_CM")
+#m_imm.freq <- read.csv("CYTOF_cellfrequencies.csv")
+cells_to_plot <- c("pDC", "DC_CD141DC", "CD8Tcells_MAIT", "CD8Tcells_TEMRA_CD24", "Monocytes_CM")
 
 # Fig 2B
 m_imm.freq %>% 
