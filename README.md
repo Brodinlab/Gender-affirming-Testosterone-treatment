@@ -1,5 +1,5 @@
 # Gender affirming Testosterone treatment
-In this repository you will find all code to reproduce figures in Lakshmikanth, Consiglio et al - Immune system adaptation during Gender affirming Testosterone treatment.
+In this repository you will find all code to reproduce figures in Lakshmikanth al - Immune system adaptation during Gender affirming Testosterone treatment.
 
 For all the data in the article, please download data from https://zenodo.org/records/11517943 (DOI: 10.5281/zenodo.11517624). The data folder will have multiple folders, some that are Figure specific data and some that are more general for several figures (eg scRNA-seq data that we reuse over multiple figures).
 
