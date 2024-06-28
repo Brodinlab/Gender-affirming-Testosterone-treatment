@@ -8,7 +8,6 @@ library(factoextra)
 
 
 # meta
-setwd("/Users/camilaconsiglio/Library/CloudStorage/OneDrive-LundUniversity/BrodinLab/SRT/Data/Metadata/")
 meta <- read.csv("Fig1_metadata2024.csv", row.names = 1)
 
 # KW pvalues
