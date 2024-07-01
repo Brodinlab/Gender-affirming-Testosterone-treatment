@@ -1,6 +1,6 @@
 # Created by Camila Consiglio (camila.consiglio@med.lu.se)
 
-## EXT FIGURE 3A ##
+## EXT FIGURE 4A ##
 library(OlinkAnalyze)
 library(stringr)
 library(reshape2)
@@ -91,5 +91,41 @@ plot_v3 <- Adf %>%
   ggplot( aes(x=Estimate_V3, y=proteins)) + geom_point(size=4, aes(color= pValueV3 < 0.05)) + # 
   geom_vline(xintercept = 0, alpha=0.3, linetype="dotted") + scale_color_manual(values = c("grey", "black")) + scale_x_continuous(limits = c(-1, 1)) +
   labs(x="B coefficient for 12 months", y=NULL, size=NULL, color="pVal<0.05")  + theme_classic() 
-plot_v3 #ExtFig3A
+plot_v3 #ExtFig4A
 
+sessionInfo()
+# R version 4.2.1 (2022-06-23)
+# Platform: x86_64-apple-darwin17.0 (64-bit)
+# Running under: macOS Monterey 12.5
+# 
+# Matrix products: default
+# LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+# 
+# locale:
+# [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+# 
+# attached base packages:
+# [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+# [1] ggthemes_4.2.4     lme4_1.1-32        Matrix_1.5-4       MuMIn_1.47.5       cowplot_1.1.1     
+# [6] factoextra_1.0.7   lubridate_1.9.2    forcats_1.0.0      dplyr_1.1.1        purrr_1.0.1       
+# [11] readr_2.1.4        tidyr_1.3.0        tibble_3.2.1       ggplot2_3.4.2      tidyverse_2.0.0   
+# [16] reshape2_1.4.4     stringr_1.5.0      OlinkAnalyze_3.6.2
+# 
+# loaded via a namespace (and not attached):
+# [1] ggrepel_0.9.3       Rcpp_1.0.10         mvtnorm_1.1-3       lattice_0.21-8     
+# [5] utf8_1.2.3          R6_2.5.1            cellranger_1.1.0    plyr_1.8.8         
+# [9] backports_1.4.1     stats4_4.2.1        pillar_1.9.0        rlang_1.1.0        
+# [13] readxl_1.4.2        rstudioapi_0.14     minqa_1.2.5         car_3.1-2          
+# [17] nloptr_2.0.3        labeling_0.4.2      splines_4.2.1       munsell_0.5.0      
+# [21] broom_1.0.4         compiler_4.2.1      numDeriv_2016.8-1.1 pkgconfig_2.0.3    
+# [25] parameters_0.20.3   lmerTest_3.1-3      insight_0.19.1      tidyselect_1.2.0   
+# [29] fansi_1.0.4         tzdb_0.4.0          withr_2.5.0         MASS_7.3-58.3      
+# [33] grid_4.2.1          nlme_3.1-162        xtable_1.8-4        gtable_0.3.3       
+# [37] lifecycle_1.0.3     magrittr_2.0.3      bayestestR_0.13.1   scales_1.2.1       
+# [41] datawizard_0.7.1    zip_2.2.2           estimability_1.4.1  cli_3.6.1          
+# [45] stringi_1.7.12      carData_3.0-5       farver_2.1.1        generics_0.1.3     
+# [49] vctrs_0.6.1         boot_1.3-28.1       tools_4.2.1         glue_1.6.2         
+# [53] hms_1.1.3           emmeans_1.8.5       abind_1.4-5         timechange_0.2.0   
+# [57] colorspace_2.1-0    rstatix_0.7.2  
