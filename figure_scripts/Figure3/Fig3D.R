@@ -93,7 +93,7 @@ plot_v2 <- Adf %>%
   ggplot( aes(x=Estimate_V2, y=proteins)) + geom_point(size=4, aes(color= pValueV2 < 0.05)) + # 
   geom_vline(xintercept = 0, alpha=0.3, linetype="dotted") + scale_color_manual(values = c("grey", "black")) + scale_x_continuous(limits = c(-1, 1)) +
   labs(x="B coefficient for 3 months", y=NULL, size=NULL)  + theme_classic() + theme(legend.position = "none")
-plot_v2 #Fig 3A
+plot_v2 
 
 sessionInfo()
 # R version 4.2.1 (2022-06-23)
