@@ -1,6 +1,6 @@
 # Created by Camila Consiglio (camila.consiglio@med.lu.se)
 
-## Heatmap marker expression per cluster, EXT FIG 2A ##
+## Heatmap marker expression per cluster, EXT FIG 2B ##
 
 # 0. Load packages ----------
 library(vite) 
